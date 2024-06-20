@@ -5710,7 +5710,7 @@ bool32 TrySetAteType(u32 move, u32 battlerAtk, u32 attackerAbility)
     switch (attackerAbility)
     {
     case ABILITY_PIXILATE:
-        ateType = TYPE_FAIRY;
+        ateType = TYPE_LIGHT;
         break;
     case ABILITY_REFRIGERATE:
         ateType = TYPE_ICE;
@@ -5772,7 +5772,7 @@ void SetTypeBeforeUsingMove(u32 move, u32 battlerAtk)
                      | ((gBattleMons[battlerAtk].spAttackIV & 1) << 4)
                      | ((gBattleMons[battlerAtk].spDefenseIV & 1) << 5);
 
-        // Subtract 6 instead of 1 below because 5 types are excluded (TYPE_NONE, TYPE_NORMAL, TYPE_MYSTERY, TYPE_FAIRY and TYPE_STELLAR)
+        // Subtract 6 instead of 1 below because 5 types are excluded (TYPE_NONE, TYPE_NORMAL, TYPE_MYSTERY, TYPE_LIGHT and TYPE_STELLAR)
         // The final + 2 skips past TYPE_NONE and Normal.
         gBattleStruct->dynamicMoveType = ((NUMBER_OF_MON_TYPES - 6) * typeBits) / 63 + 2;
         if (gBattleStruct->dynamicMoveType >= TYPE_MYSTERY)
@@ -5822,7 +5822,7 @@ void SetTypeBeforeUsingMove(u32 move, u32 battlerAtk)
             else if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
                 gBattleStruct->dynamicMoveType = TYPE_GRASS | F_DYNAMIC_TYPE_SET;
             else if (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN)
-                gBattleStruct->dynamicMoveType = TYPE_FAIRY | F_DYNAMIC_TYPE_SET;
+                gBattleStruct->dynamicMoveType = TYPE_LIGHT | F_DYNAMIC_TYPE_SET;
             else if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
                 gBattleStruct->dynamicMoveType = TYPE_PSYCHIC | F_DYNAMIC_TYPE_SET;
             else //failsafe

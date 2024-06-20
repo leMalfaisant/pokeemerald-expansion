@@ -656,7 +656,7 @@ static const struct SpriteTemplate * const sTeraIndicatorSpriteTemplates[NUMBER_
     [TYPE_ICE] = &sSpriteTemplate_IceIndicator,
     [TYPE_DRAGON] = &sSpriteTemplate_DragonIndicator,
     [TYPE_DARK] = &sSpriteTemplate_DarkIndicator,
-    [TYPE_FAIRY] = &sSpriteTemplate_FairyIndicator,
+    [TYPE_LIGHT] = &sSpriteTemplate_FairyIndicator,
     [TYPE_STELLAR] = &sSpriteTemplate_StellarIndicator,
 };
 

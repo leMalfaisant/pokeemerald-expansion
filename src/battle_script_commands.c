@@ -14844,7 +14844,7 @@ static void Cmd_settypetoterrain(void)
         terrainType = TYPE_GRASS;
         break;
     case STATUS_FIELD_MISTY_TERRAIN:
-        terrainType = TYPE_FAIRY;
+        terrainType = TYPE_LIGHT;
         break;
     case STATUS_FIELD_PSYCHIC_TERRAIN:
         terrainType = TYPE_PSYCHIC;
