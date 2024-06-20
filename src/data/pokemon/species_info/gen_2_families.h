@@ -1891,11 +1891,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 20,
         .baseSpDefense = 40,
-    #if P_UPDATED_TYPES >= GEN_6
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FAIRY),
-    #else
         .types = MON_TYPES(TYPE_NORMAL),
-    #endif
         .catchRate = 150,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 38 : 33,
         .evYield_HP = 1,
@@ -1958,11 +1954,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 40,
         .baseSpAttack  = 20,
         .baseSpDefense = 50,
-    #if P_UPDATED_TYPES >= GEN_6
-        .types = MON_TYPES(TYPE_WATER, TYPE_FAIRY),
-    #else
         .types = MON_TYPES(TYPE_WATER),
-    #endif
         .catchRate = 190,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 88 : 58,
         .evYield_HP = 2,
@@ -2024,11 +2016,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 50,
         .baseSpAttack  = P_UPDATED_STATS >= GEN_6 ? 60 : 50,
         .baseSpDefense = 80,
-    #if P_UPDATED_TYPES >= GEN_6
-        .types = MON_TYPES(TYPE_WATER, TYPE_FAIRY),
-    #else
         .types = MON_TYPES(TYPE_WATER),
-    #endif
         .catchRate = 75,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 210,
@@ -4104,11 +4092,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 30,
         .baseSpAttack  = 40,
         .baseSpDefense = 40,
-    #if P_UPDATED_TYPES >= GEN_6
-        .types = MON_TYPES(TYPE_FAIRY),
-    #else
         .types = MON_TYPES(TYPE_NORMAL),
-    #endif
         .catchRate = 190,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 63,
         .evYield_Attack = 1,
@@ -4170,11 +4154,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 45,
         .baseSpAttack  = 60,
         .baseSpDefense = 60,
-    #if P_UPDATED_TYPES >= GEN_6
-        .types = MON_TYPES(TYPE_FAIRY),
-    #else
         .types = MON_TYPES(TYPE_NORMAL),
-    #endif
         .catchRate = 75,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 158 : 178,
         .evYield_Attack = 2,

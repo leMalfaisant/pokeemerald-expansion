@@ -4657,13 +4657,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_VULPIX
 
-#if P_FAMILY_JIGGLYPUFF
-#if P_UPDATED_TYPES >= GEN_6
-    #define JIGGLYPUFF_FAMILY_TYPES { TYPE_NORMAL, TYPE_FAIRY}
-#else
-    #define JIGGLYPUFF_FAMILY_TYPES { TYPE_NORMAL, TYPE_NORMAL}
-#endif
-
 #if P_GEN_2_CROSS_EVOS
     [SPECIES_IGGLYBUFF] =
     {
@@ -4673,7 +4666,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 15,
         .baseSpAttack  = 40,
         .baseSpDefense = 20,
-        .types = JIGGLYPUFF_FAMILY_TYPES,
+        .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 170,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 42 : 39,
         .evYield_HP = 1,
@@ -4737,7 +4730,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 45,
         .baseSpDefense = 25,
-        .types = JIGGLYPUFF_FAMILY_TYPES,
+        .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 170,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 95 : 76,
         .evYield_HP = 2,
@@ -4800,7 +4793,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 45,
         .baseSpAttack  = P_UPDATED_STATS >= GEN_6 ? 85 : 75,
         .baseSpDefense = 50,
-        .types = JIGGLYPUFF_FAMILY_TYPES,
+        .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 50,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 218,
@@ -12236,7 +12229,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 60,
         .baseSpAttack  = 85,
         .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_POISON, TYPE_FAIRY),
+        .types = MON_TYPES(TYPE_POISON, TYPE_STEEL),
         .catchRate = 60,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 172 : 173,
         .evYield_Defense = 2,
@@ -13418,11 +13411,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 60,
         .baseSpAttack  = 70,
         .baseSpDefense = 90,
-    #if P_UPDATED_TYPES >= GEN_6
-        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FAIRY),
-    #else
         .types = MON_TYPES(TYPE_PSYCHIC),
-    #endif
         .catchRate = 145,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 62 : 78,
         .evYield_SpDefense = 1,
@@ -13486,11 +13475,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 90,
         .baseSpAttack  = 100,
         .baseSpDefense = 120,
-    #if P_UPDATED_TYPES >= GEN_6
-        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FAIRY),
-    #else
         .types = MON_TYPES(TYPE_PSYCHIC),
-    #endif
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 161 : 136,
         .evYield_SpDefense = 2,
