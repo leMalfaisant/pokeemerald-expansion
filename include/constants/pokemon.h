@@ -21,7 +21,7 @@
 #define TYPE_ICE              16
 #define TYPE_DRAGON           17
 #define TYPE_DARK             18
-#define TYPE_LIGHT            19
+#define TYPE_FAIRY            19
 #define TYPE_STELLAR          20
 #define NUMBER_OF_MON_TYPES   21
 
